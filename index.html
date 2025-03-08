@@ -3,103 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ByteSpace - AI Tools, Reviews & Blogs">
-    <meta name="keywords" content="AI tools, artificial intelligence, machine learning, AI news, deep learning, tech blogs">
-    <meta name="author" content="ByteSpace Team">
-    <title>ByteSpace - AI Tools, Reviews & Blogs</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Byte Space -Tech Blog</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Skeleton Loader -->
+    <!-- 🔥 Skeleton Loader -->
     <div id="skeleton-loader">
-        <div class="skeleton-header"></div>
-        <div class="skeleton-block"></div>
-        <div class="skeleton-block"></div>
+        <div class="skeleton-box"></div>
+        <div class="skeleton-box"></div>
+        <div class="skeleton-box"></div>
+        <div class="skeleton-box"></div>
+        <div class="skeleton-box"></div>
+        <div class="skeleton-box"></div>
+        <div class="skeleton-box"></div>
+        <div class="skeleton-box"></div>
+        <div class="skeleton-box"></div>
+        <div class="skeleton-box"></div>
+        <div class="skeleton-box"></div>
+        <div class="skeleton-box"></div>
     </div>
 
-    <!-- Main Content -->
-    <div id="main-content">
-        <header>
-            <h1>ByteSpace</h1>
-            <p>Your go-to source for AI tools, reviews, and insights</p>
-            <input type="text" id="search" placeholder="Search AI Tools...">
-            <nav>
-                <ul>
-                    <li><a href="#blogs">Blogs</a></li>
-                    <li><a href="#tools">AI Tools</a></li>
-                    <li><a href="#news">News</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+    <!-- 🔥 Animated Zebra Background -->
+    <div class="animated-bg"></div>
 
-        <!-- Grid Layout -->
-        <div class="grid-container">
+    <!-- 🔥 Hamburger Menu -->
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
 
-            <!-- Featured Blogs -->
-            <section id="blogs" class="box">
-                <h2>Featured Blogs</h2>
-                <div class="grid">
-                    <article class="card">
-                        <img src="cover1.jpg" alt="AI Future">
-                        <h3>How AI is Changing the Future</h3>
-                        <p>AI is transforming industries. Here's how...</p>
-                        <a href="#">Read More</a>
-                    </article>
-                    <article class="card">
-                        <img src="cover2.jpg" alt="Top AI Tools">
-                        <h3>Top 10 AI Tools in 2025</h3>
-                        <p>Check out the best AI-powered tools of the year.</p>
-                        <a href="#">Read More</a>
-                    </article>
+    <!-- 🔥 Navbar (Hidden by Default) -->
+    <nav class="nav-menu hidden">
+        <ul>
+            <li><a href="#">🏠 Home</a></li>
+            <li><a href="#">⚡ Trending</a></li>
+            <li><a href="#">🧠 Tech</a></li>
+            <li><a href="#">🔮 Future</a></li>
+        </ul>
+    </nav>
+
+    <!-- 🔥 Main Content -->
+    <div class="content-container hidden">
+        
+        <!-- 🔥 Trending Topics -->
+        <section class="trending">
+            <h2>🔥 Trending Topics</h2>
+            <div class="post">
+                <div class="post-image"></div>
+                <div class="post-content">
+                    <h3 class="hidden">Ultra-Premium AI Tech is Coming</h3>
+                    <p class="hidden">AI that can build websites better than humans?</p>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- AI Tools -->
-            <section id="tools" class="box">
-                <h2>Popular AI Tools</h2>
-                <div class="grid">
-                    <div class="card">
-                        <img src="tool1.jpg" alt="ChatGPT">
-                        <h3>ChatGPT</h3>
-                        <p>AI chatbot for content generation.</p>
-                        <a href="#">Full Review</a>
-                    </div>
-                    <div class="card">
-                        <img src="tool2.jpg" alt="DeepL Translator">
-                        <h3>DeepL Translator</h3>
-                        <p>Accurate AI-powered language translation.</p>
-                        <a href="#">Full Review</a>
-                    </div>
+        <!-- 🔥 Latest Blogs -->
+        <section class="latest">
+            <h2>🆕 Latest Blogs</h2>
+            <div class="post">
+                <div class="post-image"></div>
+                <div class="post-content">
+                    <h3 class="hidden">How Quantum Computers Will Change Everything</h3>
+                    <p class="hidden">Forget normal computers, quantum is the real deal.</p>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- AI News -->
-            <section id="news" class="box">
-                <h2>Latest AI News</h2>
-                <div class="grid">
-                    <article class="card">
-                        <img src="news1.jpg" alt="OpenAI Release">
-                        <h3>OpenAI Releases New AI Model</h3>
-                        <p>The latest breakthrough in AI research...</p>
-                        <a href="#">Read More</a>
-                    </article>
-                    <article class="card">
-                        <img src="news2.jpg" alt="Google Gemini AI">
-                        <h3>Google's Gemini AI Takes Over Search</h3>
-                        <p>Google is integrating AI deeper into search.</p>
-                        <a href="#">Read More</a>
-                    </article>
+        <!-- 🔥 Most Viewed -->
+        <section class="most-viewed">
+            <h2>👀 Most Viewed</h2>
+            <div class="post">
+                <div class="post-image"></div>
+                <div class="post-content">
+                    <h3 class="hidden">The Future of Tech: What’s Next?</h3>
+                    <p class="hidden">A deep dive into the next big innovations.</p>
                 </div>
-            </section>
+            </div>
+        </section>
 
-        </div> <!-- End of Grid -->
+        <!-- 🔥 All Topics -->
+        <section class="all-topics">
+            <h2>📂 Explore Topics</h2>
+            <div class="category-list">
+                <a href="#">💻 Programming</a>
+                <a href="#">🤖 AI & Machine Learning</a>
+                <a href="#">🕶️ AR & VR</a>
+                <a href="#">🚀 Space Tech</a>
+                <a href="#">📡 Future Innovations</a>
+            </div>
+        </section>
 
-        <!-- Footer -->
-        <footer>
-            <p>© ByteSpace, 2025 | <a href="#">Privacy Policy</a> | <a href="#">Contact</a></p>
-        </footer>
     </div>
 
     <script src="script.js"></script>
