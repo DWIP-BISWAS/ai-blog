@@ -1,3 +1,19 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1c1c1c, #252525);
+    color: white;
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+}
+
 /* Scroll bounce effect */
 html {
     scroll-behavior: smooth;
@@ -11,24 +27,6 @@ html {
     50% { transform: translateY(-3px); }
     75% { transform: translateY(2px); }
     100% { transform: translateY(0); }
-}
-
-/* Smooth Transitions */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    font-family: 'Arial', sans-serif;
-}
-
-/* Background for light/dark mode */
-body {
-    background: linear-gradient(135deg, #1c1c1c, #252525);
-    color: white;
-    text-align: center;
-    animation: jiggle 0.3s ease-out;
-    transition: background 0.3s ease-in-out;
 }
 
 /* Skeleton Loader */
@@ -67,7 +65,7 @@ body {
     100% { opacity: 1; }
 }
 
-/* After content loads */
+/* Fade-in after content loads */
 #main-content {
     opacity: 0;
     transform: translateY(10px);
@@ -78,4 +76,44 @@ body {
 @keyframes fadeIn {
     0% { opacity: 0; transform: translateY(10px); }
     100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Modular Boxes */
+.box {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+}
+
+/* Cards */
+.grid {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: #292929;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.card:hover {
+    transform: scale(1.05);
 }
