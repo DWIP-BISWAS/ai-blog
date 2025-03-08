@@ -1,87 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Byte Space</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Byte Space</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r146/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
 </head>
 <body>
+  <!-- Loading Animation Container -->
+  <div id="loadingAnimation"></div>
 
-    <!-- 🔥 Animated Background -->
-    <div class="animated-bg"></div>
-
-    <!-- 🔥 Skeleton Loader -->
-    <div id="skeleton-loader">
-        <div class="skeleton-box"></div>
-        <div class="skeleton-box"></div>
-        <div class="skeleton-box"></div>
-        <h1 class="loading-text">Loading <span>.</span><span>.</span><span>.</span></h1>
-    </div>
-
-    <!-- 🔥 Header -->
-    <header class="site-header">
-        <h1>BYTE SPACE</h1>
-        <div class="dark-mode-toggle">🌙</div>
+  <!-- Main Content -->
+  <main class="content" id="mainContent">
+    <header>
+      <h1 class="header-title">Byte Space</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Trending</a></li>
+          <li><a href="#">Latest</a></li>
+          <li><a href="#">Most Viewed</a></li>
+          <li><a href="#">Categories</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <!-- 🔥 Hamburger Menu -->
-    <div class="hamburger">
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
+    <section class="blog-container">
+      <div class="blog-box">
+        <h2>Blog Title 1</h2>
+        <p>This is a futuristic blog post about tech and cyberpunk vibes.</p>
+      </div>
+      <div class="blog-box">
+        <h2>Blog Title 2</h2>
+        <p>Another mind-blowing post about the future of AI and design.</p>
+      </div>
+      <div class="blog-box">
+        <h2>Blog Title 3</h2>
+        <p>Exploring the intersection of creativity and technology.</p>
+      </div>
+    </section>
+  </main>
 
-    <!-- 🔥 Navbar -->
-    <nav class="nav-menu">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Trending</a></li>
-            <li><a href="#">Latest</a></li>
-            <li><a href="#">Most Viewed</a></li>
-            <li><a href="#">Categories</a></li>
-        </ul>
-    </nav>
-
-    <!-- 🔥 Main Content -->
-    <main class="content-container hidden">
-        
-        <section class="trending">
-            <h2>🔥 Trending Topics</h2>
-            <div class="post cluster"><img src="ai.jpg" alt="">🚀 AI is taking over</div>
-            <div class="post cluster"><img src="web3.jpg" alt="">💻 The future of Web 3.0</div>
-        </section>
-
-        <section class="latest">
-            <h2>🆕 Latest Blogs</h2>
-            <div class="post cluster"><img src="nn.jpg" alt="">⚡ The rise of Neural Networks</div>
-            <div class="post cluster"><img src="tech.jpg" alt="">🌍 How tech is changing</div>
-        </section>
-
-        <section class="most-viewed">
-            <h2>👀 Most Viewed</h2>
-            <div class="post cluster"><img src="robots.jpg" alt="">🤖 The age of humanoid robots</div>
-            <div class="post cluster"><img src="quantum.jpg" alt="">🔬 Quantum computing explained</div>
-        </section>
-
-        <section class="categories">
-            <h2>📂 Categories</h2>
-            <div class="category-grid">
-                <a href="#" class="category">AI</a>
-                <a href="#" class="category">Web Development</a>
-                <a href="#" class="category">Cybersecurity</a>
-                <a href="#" class="category">Machine Learning</a>
-                <a href="#" class="category">Blockchain</a>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- 🔥 Footer -->
-    <footer class="footer">
-        <p>Byte Space © 2025 - All rights reserved</p>
-    </footer>
-
-    <script src="script.js"></script>
+  <script src="main.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
