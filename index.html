@@ -3,14 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ByteSpace - A Detailed Blog Site for All Your Needs</title>
+    <meta name="description" content="ByteSpace - The best source for AI tool reviews, industry news, and in-depth blogs. Stay updated with the latest in AI technology.">
+    <meta name="keywords" content="AI tools, artificial intelligence, machine learning, AI news, deep learning, tech blogs">
+    <meta name="author" content="ByteSpace Team">
+    <title>ByteSpace - AI Tools, Reviews & Blogs</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- Header Section -->
     <header>
         <h1>ByteSpace</h1>
         <p>Your go-to source for AI tools, reviews, and insights</p>
         <input type="text" id="search" placeholder="Search AI Tools...">
+        <nav>
+            <ul>
+                <li><a href="#featured-blogs">Blogs</a></li>
+                <li><a href="#popular-ai-tools">AI Tools</a></li>
+                <li><a href="#latest-ai-news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Featured Blogs Section -->
@@ -19,27 +32,21 @@
         <div class="blog-container">
             <article class="blog-post">
                 <img src="cover1.jpg" alt="AI Future">
-                <div class="blog-content">
-                    <h3>How AI is Changing the Future</h3>
-                    <p>AI is transforming industries. Here's how...</p>
-                    <a href="#">Read More</a>
-                </div>
+                <h3>How AI is Changing the Future</h3>
+                <p>AI is transforming industries. Here's how...</p>
+                <a href="#">Read More</a>
             </article>
             <article class="blog-post">
                 <img src="cover2.jpg" alt="Top AI Tools">
-                <div class="blog-content">
-                    <h3>Top 10 AI Tools in 2025</h3>
-                    <p>Check out the best AI-powered tools of the year.</p>
-                    <a href="#">Read More</a>
-                </div>
+                <h3>Top 10 AI Tools in 2025</h3>
+                <p>Check out the best AI-powered tools of the year.</p>
+                <a href="#">Read More</a>
             </article>
             <article class="blog-post">
                 <img src="cover3.jpg" alt="Machine Learning">
-                <div class="blog-content">
-                    <h3>Understanding Machine Learning</h3>
-                    <p>Breakdown of ML concepts for beginners.</p>
-                    <a href="#">Read More</a>
-                </div>
+                <h3>Understanding Machine Learning</h3>
+                <p>Breakdown of ML concepts for beginners.</p>
+                <a href="#">Read More</a>
             </article>
         </div>
     </section>
@@ -51,7 +58,7 @@
             <div class="tool">
                 <img src="tool1.jpg" alt="ChatGPT">
                 <h3>ChatGPT</h3>
-                <p>AI chatbot for conversations and content generation.</p>
+                <p>AI chatbot for content generation.</p>
                 <a href="#">Full Review</a>
             </div>
             <div class="tool">
@@ -63,7 +70,13 @@
             <div class="tool">
                 <img src="tool3.jpg" alt="RunwayML">
                 <h3>RunwayML</h3>
-                <p>AI-powered video editing and image generation.</p>
+                <p>AI-powered video editing.</p>
+                <a href="#">Full Review</a>
+            </div>
+            <div class="tool">
+                <img src="tool4.jpg" alt="MidJourney">
+                <h3>MidJourney</h3>
+                <p>AI image generation tool.</p>
                 <a href="#">Full Review</a>
             </div>
         </div>
@@ -73,30 +86,50 @@
     <section id="latest-ai-news">
         <h2>Latest AI News</h2>
         <div class="news-container">
-            <article class="news-post">
+            <article class="news-item">
                 <img src="news1.jpg" alt="OpenAI Release">
-                <div class="news-content">
-                    <h3>OpenAI Releases New AI Model</h3>
-                    <p>The latest breakthrough in AI research...</p>
-                    <a href="#">Read More</a>
-                </div>
+                <h3>OpenAI Releases New AI Model</h3>
+                <p>The latest breakthrough in AI research...</p>
+                <a href="#">Read More</a>
             </article>
-            <article class="news-post">
+            <article class="news-item">
                 <img src="news2.jpg" alt="Google Gemini AI">
-                <div class="news-content">
-                    <h3>Google's Gemini AI Takes Over Search</h3>
-                    <p>Google is integrating AI deeper into search.</p>
-                    <a href="#">Read More</a>
-                </div>
+                <h3>Google's Gemini AI Takes Over Search</h3>
+                <p>Google is integrating AI deeper into search.</p>
+                <a href="#">Read More</a>
+            </article>
+            <article class="news-item">
+                <img src="news3.jpg" alt="Meta AI Update">
+                <h3>Meta's AI Tools Get a Major Update</h3>
+                <p>How Meta is shaping the future of AI.</p>
+                <a href="#">Read More</a>
             </article>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Contact & Footer Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions or suggestions? Reach out!</p>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
     <footer>
         <p>© ByteSpace, 2025 | <a href="#">Privacy Policy</a> | <a href="#">Contact</a></p>
     </footer>
 
     <script src="script.js"></script>
+
 </body>
 </html>
