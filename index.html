@@ -3,99 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Byte Space -Tech Blog</title>
+    <title>Byte Space</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- 🔥 Animated Background -->
+    <div class="animated-bg"></div>
 
     <!-- 🔥 Skeleton Loader -->
     <div id="skeleton-loader">
         <div class="skeleton-box"></div>
         <div class="skeleton-box"></div>
         <div class="skeleton-box"></div>
-        <div class="skeleton-box"></div>
-        <div class="skeleton-box"></div>
-        <div class="skeleton-box"></div>
-        <div class="skeleton-box"></div>
-        <div class="skeleton-box"></div>
-        <div class="skeleton-box"></div>
-        <div class="skeleton-box"></div>
-        <div class="skeleton-box"></div>
-        <div class="skeleton-box"></div>
+        <h1 class="loading-text">Loading <span>.</span><span>.</span><span>.</span></h1>
     </div>
 
-    <!-- 🔥 Animated Zebra Background -->
-    <div class="animated-bg"></div>
+    <!-- 🔥 Header -->
+    <header class="site-header">
+        <h1>BYTE SPACE</h1>
+        <div class="dark-mode-toggle">🌙</div>
+    </header>
 
     <!-- 🔥 Hamburger Menu -->
-    <div class="hamburger" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
+    <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
     </div>
 
-    <!-- 🔥 Navbar (Hidden by Default) -->
-    <nav class="nav-menu hidden">
+    <!-- 🔥 Navbar -->
+    <nav class="nav-menu">
         <ul>
-            <li><a href="#">🏠 Home</a></li>
-            <li><a href="#">⚡ Trending</a></li>
-            <li><a href="#">🧠 Tech</a></li>
-            <li><a href="#">🔮 Future</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Latest</a></li>
+            <li><a href="#">Most Viewed</a></li>
+            <li><a href="#">Categories</a></li>
         </ul>
     </nav>
 
     <!-- 🔥 Main Content -->
-    <div class="content-container hidden">
+    <main class="content-container hidden">
         
-        <!-- 🔥 Trending Topics -->
         <section class="trending">
             <h2>🔥 Trending Topics</h2>
-            <div class="post">
-                <div class="post-image"></div>
-                <div class="post-content">
-                    <h3 class="hidden">Ultra-Premium AI Tech is Coming</h3>
-                    <p class="hidden">AI that can build websites better than humans?</p>
-                </div>
-            </div>
+            <div class="post cluster"><img src="ai.jpg" alt="">🚀 AI is taking over</div>
+            <div class="post cluster"><img src="web3.jpg" alt="">💻 The future of Web 3.0</div>
         </section>
 
-        <!-- 🔥 Latest Blogs -->
         <section class="latest">
             <h2>🆕 Latest Blogs</h2>
-            <div class="post">
-                <div class="post-image"></div>
-                <div class="post-content">
-                    <h3 class="hidden">How Quantum Computers Will Change Everything</h3>
-                    <p class="hidden">Forget normal computers, quantum is the real deal.</p>
-                </div>
-            </div>
+            <div class="post cluster"><img src="nn.jpg" alt="">⚡ The rise of Neural Networks</div>
+            <div class="post cluster"><img src="tech.jpg" alt="">🌍 How tech is changing</div>
         </section>
 
-        <!-- 🔥 Most Viewed -->
         <section class="most-viewed">
             <h2>👀 Most Viewed</h2>
-            <div class="post">
-                <div class="post-image"></div>
-                <div class="post-content">
-                    <h3 class="hidden">The Future of Tech: What’s Next?</h3>
-                    <p class="hidden">A deep dive into the next big innovations.</p>
-                </div>
+            <div class="post cluster"><img src="robots.jpg" alt="">🤖 The age of humanoid robots</div>
+            <div class="post cluster"><img src="quantum.jpg" alt="">🔬 Quantum computing explained</div>
+        </section>
+
+        <section class="categories">
+            <h2>📂 Categories</h2>
+            <div class="category-grid">
+                <a href="#" class="category">AI</a>
+                <a href="#" class="category">Web Development</a>
+                <a href="#" class="category">Cybersecurity</a>
+                <a href="#" class="category">Machine Learning</a>
+                <a href="#" class="category">Blockchain</a>
             </div>
         </section>
 
-        <!-- 🔥 All Topics -->
-        <section class="all-topics">
-            <h2>📂 Explore Topics</h2>
-            <div class="category-list">
-                <a href="#">💻 Programming</a>
-                <a href="#">🤖 AI & Machine Learning</a>
-                <a href="#">🕶️ AR & VR</a>
-                <a href="#">🚀 Space Tech</a>
-                <a href="#">📡 Future Innovations</a>
-            </div>
-        </section>
+    </main>
 
-    </div>
+    <!-- 🔥 Footer -->
+    <footer class="footer">
+        <p>Byte Space © 2025 - All rights reserved</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
